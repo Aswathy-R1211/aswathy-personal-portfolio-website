@@ -262,8 +262,8 @@ section {
 }
 
 .hero-image .img-container {
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
     padding: 10px;
     background: linear-gradient(135deg, var(--primary), var(--secondary));
