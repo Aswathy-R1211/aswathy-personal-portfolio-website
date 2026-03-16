@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education & Experience | Aswathy R</title>
+    <meta name="description" content="Educational background and internship experience of Aswathy R.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .timeline-item {
+            border-left: 2px solid var(--border);
+            padding-left: 2rem;
+            padding-bottom: 2.5rem;
+            position: relative;
+            transition: var(--transition);
+        }
+        .timeline-item:last-child {
+            border-left-color: transparent;
+            padding-bottom: 0;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -9px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            background: var(--bg-card);
+            border-radius: 50%;
+            border: 3px solid var(--border);
+            transition: var(--transition);
+        }
+        .timeline-item:hover::before {
+            border-color: var(--primary);
+            background: var(--primary);
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+        }
+        .timeline-item:hover {
+            border-left-color: var(--primary);
+        }
+        .timeline-item h4 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+            transform: translateY(-5px);
+        }
+        .timeline-subtitle {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+        .timeline-meta {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        .timeline-card {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+        }
+        .timeline-item:hover .timeline-card {
+            box-shadow: var(--shadow-md);
+            border-color: var(--primary-light);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">Aswathy R.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html" class="active">Experience</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 8rem; min-height: calc(100vh - 200px);">
+        <section class="experience" style="padding-top: 0;">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">Education & Experience</h2>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 4rem;">
+                    
+                    <!-- Experience Section -->
+                    <div class="experience-section fade-in-up delay-1">
+                        <h3 style="margin-bottom: 2.5rem; color: var(--text-main); display: flex; align-items: center; gap: 0.75rem; font-size: 1.75rem;">
+                            <div style="width: 45px; height: 45px; border-radius: 10px; background: rgba(37, 99, 235, 0.1); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            Experience
+                        </h3>
+                        <div class="timeline">
+                            <div class="timeline-item" style="border-left-color: var(--primary);">
+                                <div style="position: absolute; left: -9px; top: 0; width: 16px; height: 16px; background: var(--primary); border-radius: 50%; border: 3px solid white; box-shadow: 0 0 0 2px var(--primary);"></div>
+                                <h4>Machine Learning Intern</h4>
+                                <div class="timeline-card">
+                                    <div class="timeline-subtitle">Gradtwin, Chennai</div>
+                                    <div class="timeline-meta"><i class="far fa-calendar-alt"></i> Duration: 5 Months | Completed: October 2025</div>
+                                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+                                        Worked on practical machine learning concepts and gained hands-on experience implementing algorithms and working with datasets for predictive modeling.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Education Section -->
+                    <div class="education-section fade-in-up delay-2">
+                        <h3 style="margin-bottom: 2.5rem; color: var(--text-main); display: flex; align-items: center; gap: 0.75rem; font-size: 1.75rem;">
+                            <div style="width: 45px; height: 45px; border-radius: 10px; background: rgba(37, 99, 235, 0.1); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            Education
+                        </h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h4>Machine Learning Course</h4>
+                                <div class="timeline-card">
+                                    <div class="timeline-subtitle">Entri Elevate</div>
+                                    <div class="timeline-meta"><i class="far fa-calendar-alt"></i> Duration: 3 Months | Completion: May 2025</div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <h4>BA English</h4>
+                                <div class="timeline-card">
+                                    <div class="timeline-subtitle">Milad-E-Sherief Memorial College</div>
+                                    <div class="timeline-meta"><i class="fas fa-map-marker-alt"></i> Kayamkulam, Kerala | Affiliated to Kerala University</div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <h4>Higher Secondary Education</h4>
+                                <div class="timeline-card">
+                                    <div class="timeline-subtitle">Santhinikethanam Model Higher Secondary School</div>
+                                    <div class="timeline-meta"><i class="far fa-calendar-alt"></i> Completed in 2022 | Kollam, Kerala</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">Aswathy R.</div>
+            <div class="footer-social">
+                <a href="https://github.com/Aswathy-R1211" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/aswathy-r-1751b9347" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:aswathysarovar@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aswathy R. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

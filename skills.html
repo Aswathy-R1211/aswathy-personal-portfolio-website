@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Aswathy R</title>
+    <meta name="description" content="Technical and soft skills of Aswathy R.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .skill-category {
+            background: var(--bg-card);
+            padding: 2.5rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border);
+            height: 100%;
+            transition: var(--transition);
+        }
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-light);
+        }
+        .skill-category-title {
+            margin-bottom: 2rem;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.5rem;
+        }
+        .skill-icon-wrapper {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: rgba(37, 99, 235, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+        }
+        .skill-item {
+            margin-bottom: 1.5rem;
+        }
+        .skill-item:last-child {
+            margin-bottom: 0;
+        }
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+        .progress-bar {
+            width: 100%;
+            background: var(--bg-main);
+            border-radius: 10px;
+            height: 8px;
+            overflow: hidden;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary-light), var(--primary));
+            border-radius: 10px;
+            width: 0; /* Animated via CSS class */
+            transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        /* Soft Skills Tags */
+        .soft-skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .soft-skill-tag {
+            background: var(--bg-main);
+            color: var(--text-main);
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+        }
+        .soft-skill-tag i {
+            color: var(--primary);
+        }
+        .soft-skill-tag:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .soft-skill-tag:hover i {
+            color: white;
+        }
+
+        /* Set Progress Fill Widths */
+        .fill-90 { width: 90%; }
+        .fill-80 { width: 80%; }
+        .fill-75 { width: 75%; }
+        .fill-85 { width: 85%; }
+        .fill-70 { width: 70%; }
+        .fill-65 { width: 65%; }
+
+        @keyframes fillProgress {
+            from { width: 0; }
+        }
+        .progress-fill {
+            animation: fillProgress 1.5s ease-out forwards;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">Aswathy R.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 8rem; min-height: calc(100vh - 200px);">
+        <section class="skills" style="padding-top: 0;">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">My Skills</h2>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; margin-bottom: 2.5rem;">
+                    
+                    <!-- Programming & Scripting -->
+                    <div class="skill-category fade-in-up delay-1">
+                        <h3 class="skill-category-title">
+                            <div class="skill-icon-wrapper"><i class="fas fa-code"></i></div>
+                            Programming & Scripting
+                        </h3>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Python</span></div>
+                            <div class="progress-bar"><div class="progress-fill fill-90" style="animation-delay: 0.2s;"></div></div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info"><span>HTML</span></div>
+                            <div class="progress-bar"><div class="progress-fill fill-85" style="animation-delay: 0.3s;"></div></div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info"><span>CSS</span></div>
+                            <div class="progress-bar"><div class="progress-fill fill-80" style="animation-delay: 0.4s;"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Java</span></div>
+                            <div class="progress-bar"><div class="progress-fill fill-70" style="animation-delay: 0.5s;"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info"><span>C</span></div>
+                            <div class="progress-bar"><div class="progress-fill fill-65" style="animation-delay: 0.6s;"></div></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tools & Platforms -->
+                    <div class="skill-category fade-in-up delay-2">
+                        <h3 class="skill-category-title">
+                            <div class="skill-icon-wrapper"><i class="fas fa-tools"></i></div>
+                            Tools & Platforms
+                        </h3>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info"><span>SQL</span></div>
+                            <div class="progress-bar"><div class="progress-fill fill-85" style="animation-delay: 0.3s;"></div></div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Power BI</span></div>
+                            <div class="progress-bar"><div class="progress-fill fill-75" style="animation-delay: 0.4s;"></div></div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info"><span>MS Excel</span></div>
+                            <div class="progress-bar"><div class="progress-fill fill-90" style="animation-delay: 0.5s;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category fade-in-up delay-3" style="max-width: 100%;">
+                    <h3 class="skill-category-title">
+                        <div class="skill-icon-wrapper"><i class="fas fa-users"></i></div>
+                        Soft Skills
+                    </h3>
+                    
+                    <div class="soft-skills-container">
+                        <div class="soft-skill-tag"><i class="fas fa-comments"></i> Communication</div>
+                        <div class="soft-skill-tag"><i class="fas fa-people-arrows"></i> Collaboration and Teamwork</div>
+                        <div class="soft-skill-tag"><i class="fas fa-lightbulb"></i> Problem-solving</div>
+                        <div class="soft-skill-tag"><i class="fas fa-balance-scale"></i> Decision-making</div>
+                        <div class="soft-skill-tag"><i class="fas fa-hourglass-half"></i> Time Management & Prioritization</div>
+                        <div class="soft-skill-tag"><i class="fas fa-rocket"></i> Self-Motivation and Proactivity</div>
+                        <div class="soft-skill-tag"><i class="fas fa-sync-alt"></i> Adaptability</div>
+                        <div class="soft-skill-tag"><i class="fas fa-chalkboard-teacher"></i> Presentation & Facilitation Skills</div>
+                        <div class="soft-skill-tag"><i class="fas fa-clipboard-check"></i> Accountability</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">Aswathy R.</div>
+            <div class="footer-social">
+                <a href="https://github.com/Aswathy-R1211" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/aswathy-r-1751b9347" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:aswathysarovar@gmail.com"  target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aswathy R. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
